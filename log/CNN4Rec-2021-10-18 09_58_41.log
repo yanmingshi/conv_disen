@@ -1,0 +1,9 @@
+Mon 18 Oct 2021 09:58:41 INFO  Namespace(batch_size=1024, behavior_count=4, data_path='./data/', decay=0, device=device(type='cpu'), embedding_size=32, epochs=500, evaluate_batch_size=128, if_load_model=False, lambda_=0.7, layers=3, lr=0.001, metrics=['recall', 'ndcg'], min_epoch=5, model_full_name='./check_point/CNN4Rec2021-08-27 10_02_19.pth', model_name='CNN4Rec', model_path='./check_point/', reg_weight=0.0001, topk=20)
+Mon 18 Oct 2021 09:58:41 INFO  Wide5(
+  (user_embedding): Embedding(52643, 32)
+  (item_embedding): Embedding(91599, 32)
+  (BPRLoss): BPRLoss()
+  (EmbLoss): EmbLoss()
+  (feature): Conv2d(1, 16, kernel_size=(1, 1), stride=(1, 1))
+  (linear): Linear(in_features=16, out_features=1, bias=True)
+)

@@ -1,0 +1,13 @@
+Sun 10 Oct 2021 11:09:07 INFO  Namespace(batch_size=1024, behavior_count=4, data_path='./data/', decay=0, device=device(type='cpu'), embedding_size=64, epochs=500, evaluate_batch_size=512, if_load_model=False, lambda_=0.7, layers=3, lr=0.001, metrics=['recall', 'ndcg'], min_epoch=5, model_full_name='./check_point/CNN4Rec2021-08-27 10_02_19.pth', model_name='CNN4Rec', model_path='./check_point/', reg_weight=0.0001, topk=20)
+Sun 10 Oct 2021 11:09:07 INFO  Wide(
+  (user_embedding): Embedding(52643, 64)
+  (item_embedding): Embedding(91599, 64)
+  (BPRLoss): BPRLoss()
+  (L2Loss): L2Loss()
+  (feature_1): Conv2d(1, 1, kernel_size=(1, 1), stride=(1, 1))
+  (feature_2): Conv2d(1, 1, kernel_size=(1, 2), stride=(1, 1))
+  (feature_3): Conv2d(1, 1, kernel_size=(1, 4), stride=(1, 1))
+  (feature_4): Conv2d(1, 1, kernel_size=(1, 8), stride=(1, 1))
+  (feature_5): Conv2d(1, 1, kernel_size=(1, 16), stride=(1, 1))
+  (linear): Linear(in_features=5, out_features=1, bias=True)
+)
