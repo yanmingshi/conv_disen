@@ -87,7 +87,7 @@ class Trainer(object):
                 loss.backward()
                 self.optimizer.step()
                 batch_no = batch_index
-                total_loss += loss
+                total_loss += loss.item()
 
             total_loss = total_loss / (batch_no + 1)
             # 记录loss到tensorboard可视化
